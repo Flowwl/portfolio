@@ -1,12 +1,10 @@
 import React from 'react';
-import './App.css';
 import NavigationBar from "./components/layout/NavigationBar";
 import Router from "./Router";
 
 function App() {
     return (
-        <div>
-            HELLO
+        <div className="bg-red-400">
             <NavigationBar/>
             <Router/>
         </div>
