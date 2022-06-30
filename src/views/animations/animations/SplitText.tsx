@@ -1,11 +1,10 @@
-import gsap from 'gsap';
-import React, { FC, useEffect, useRef } from 'react';
+import React, { FC, useEffect } from 'react';
 import "./splitText.scss";
+import { useSelector } from "../../../hooks/useSelector";
+import gsap from 'gsap';
 
 const SplitText: FC = () => {
-
-    const boxRef = useRef<HTMLDivElement>(null);
-    const q = gsap.utils.selector(boxRef);
+    const [q, boxRef] = useSelector()
 
     useEffect(() => {
         // const splitText = Splitting(boxRef.current?.innerText || "")

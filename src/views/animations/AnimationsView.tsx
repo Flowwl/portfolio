@@ -1,10 +1,19 @@
 import React, { FC } from 'react';
-import SplitText from "./animations/SplitText";
+import Tabs, { Tab } from "../../components/layout/Tabs";
+import CoolAnimationTab from "./CoolAnimationTab";
 
 const AnimationsView: FC = () => {
+    const tabs: Tab[] = [{
+            header: "Cool animations",
+            content: <CoolAnimationTab/>
+        },
+        {
+            header: "Blank Page",
+            content: <div>Hello</div>
+        }];
     return (
-        <div className="h-full flex flex-column justify-center">
-            <SplitText/>
+        <div className="h-full">
+            <Tabs tabs={tabs}/>
         </div>
     );
 };
