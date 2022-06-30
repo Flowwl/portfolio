@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
+import SplitText from "./animations/SplitText";
 
 const AnimationsView: FC = () => {
     return (
-        <div>
-            <p>AnimationsView </p>
+        <div className="h-full flex flex-column justify-center">
+            <SplitText/>
         </div>
     );
 };

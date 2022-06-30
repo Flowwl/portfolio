@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Route, Routes } from "react-router-dom";
-import AnimationsView from "./views/AnimationsView";
+import AnimationsView from "./views/animations/AnimationsView";
 import HomeView from "./views/HomeView";
 
 const Router: FC = () => {

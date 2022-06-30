@@ -4,7 +4,7 @@ import Router from "./Router";
 
 function App() {
     return (
-        <div className="bg-red-400">
+        <div className="h-screen">
             <NavigationBar/>
             <Router/>
         </div>
