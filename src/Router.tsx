@@ -2,13 +2,13 @@ import React, { FC } from 'react';
 import { Route, Routes } from "react-router-dom";
 import AnimationsView from "./views/animations/AnimationsView";
 import HomeView from "./views/home/HomeView";
+import PlaygroundView from "./views/playground/PlaygroundView";
 
 const Router: FC = () => {
 
     return (
         <Routes>
-            <Route path={ROUTES.HOME.path} element={ROUTES.HOME.view} />
-            <Route path={ROUTES.ANIMATIONS.path} element={ROUTES.ANIMATIONS.view} />
+            {Object.values(ROUTES).map(({path, view}) => (<Route path={path} element={view}/>))}
         </Routes>
     );
 };
@@ -23,5 +23,9 @@ export const ROUTES = {
     ANIMATIONS: {
         path: "/animations",
         view: <AnimationsView/>
+    },
+    PLAYGROUND: {
+        path: "/playground",
+        view: <PlaygroundView/>
     }
 }
