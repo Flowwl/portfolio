@@ -1,12 +1,15 @@
 import React from 'react';
 import NavigationBar from "./components/layout/NavigationBar";
 import Router from "./Router";
+import Footer from "./components/layout/footer/Footer";
+import "./App.scss";
 
 function App() {
     return (
-        <div className="h-screen">
+        <div>
             <NavigationBar/>
             <Router/>
+            <Footer/>
         </div>
     );
 }
