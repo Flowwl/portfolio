@@ -5,7 +5,6 @@ import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 
 const HomeView: FC = () => {
-
     return (
         <>
             <Banner/>

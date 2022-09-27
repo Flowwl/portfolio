@@ -5,9 +5,17 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "clean": "rm -rf ./node_modules",
-    "clean-install": "npm run clean && npm install"
+    "dev": "yarn validate && yarn start",
+    "deploy": "yarn global add serve && serve -s build",
+    "eject": "react-scripts eject",
+    "clean": "rm -rf node_modules",
+    "clean-install": "yarn clean && yarn install",
+    "analyze": "yarn clean && yarn install && yarn build && source-map-explorer 'build/static/js/*.js'",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --no-error-on-unmatched-pattern --quiet --fix --config .eslintrc.js",
+    "prettier": "prettier --write \"**/*.+(ts|tsx)\" --config .prettierrc.js",
+    "validate": "yarn lint && yarn prettier",
+    "test": "jest --logHeapUsage",
+    "coverage": "jest --coverage"
   },
   "eslintConfig": {
     "extends": [
@@ -29,12 +37,9 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.6.5",
-    "@projectstorm/react-diagrams": "^6.7.4",
-    "@types/node": "^16.11.41",
-    "@types/react": "^18.0.14",
-    "@types/react-dom": "^18.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
     "bootstrap": "^5.1.3",
-    "classnames": "^2.3.1",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "gsap": "^3.10.4",
@@ -48,7 +53,20 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
     "sass": "^1.53.0",
-    "typescript": "^4.7.4"
+    "styled-components": "^5.3.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/node": "^16.11.41",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "@types/styled-components": "^5.1.25",
+    "classnames": "^2.3.1",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.8",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.7.4"
+  }
 }

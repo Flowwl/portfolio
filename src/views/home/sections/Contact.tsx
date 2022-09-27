@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../../../assets/img/contact-img.svg";
 import TrackVisibility from 'react-on-screen';
-import "./Contact.scss"
 
 const Contact: FC = () => {
     const formInitialDetails = {
@@ -83,7 +82,7 @@ const Contact: FC = () => {
                                             </Col>
                                             <Col size={12} className="px-1">
                                                 <textarea rows={6} value={formDetails.message} placeholder="Message"
-    onChange={(e) => onFormUpdate('message', e.target.value)}/>
+                                                          onChange={(e) => onFormUpdate('message', e.target.value)}/>
                                                 <button type="submit"><span>{buttonText}</span></button>
                                             </Col>
                                             {
