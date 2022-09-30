@@ -12,7 +12,7 @@ interface NavigationTabsProps {
   tabs: Tab[];
 }
 
-const Tabs: FC<NavigationTabsProps> = (props) => {
+const Tabs2: FC<NavigationTabsProps> = (props) => {
   const { tabs } = props;
 
   const headers = tabs.map((t) => t.header);
@@ -45,4 +45,4 @@ const Tabs: FC<NavigationTabsProps> = (props) => {
   );
 };
 
-export default Tabs;
+export default Tabs2;

@@ -8,7 +8,7 @@ interface ProjectCardProps {
   imgUrl: string;
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({ title, description, imgUrl, className }) => {
+const ProjectCard2: FC<ProjectCardProps> = ({ title, description, imgUrl, className }) => {
   return (
     <Col size={12} sm={6} md={4} className={className}>
       <div className="proj-imgbx">
@@ -22,4 +22,4 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, description, imgUrl, classNa
   );
 };
 
-export default ProjectCard;
+export default ProjectCard2;

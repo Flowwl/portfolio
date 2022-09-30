@@ -6,14 +6,14 @@ import navIcon2 from "../../../assets/img/nav-icon2.svg";
 import navIcon3 from "../../../assets/img/nav-icon3.svg";
 
 import "./Footer.scss";
-import Newsletter from "./Newsletter";
+import Newsletter2 from "./Newsletter2";
 
-const Footer: FC = () => {
+const Footer2: FC = () => {
   return (
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <Newsletter />
+          <Newsletter2 />
           <Col size={12} sm={6}>
             <img src={logo} alt="Logo" />
           </Col>
@@ -37,4 +37,4 @@ const Footer: FC = () => {
   );
 };
 
-export default Footer;
+export default Footer2;

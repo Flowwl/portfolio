@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 
-const Newsletter: FC = () => {
+const Newsletter2: FC = () => {
   const [email, setEmail] = useState("");
 
   return (
@@ -30,4 +30,4 @@ const Newsletter: FC = () => {
   );
 };
 
-export default Newsletter;
+export default Newsletter2;

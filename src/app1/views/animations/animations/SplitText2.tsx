@@ -1,10 +1,10 @@
 import React, { FC, useEffect } from "react";
 import "./splitText.scss";
-import { useSelector } from "../../../hooks/useSelector";
+import { useSelector2 } from "../../../hooks/useSelector2";
 import gsap from "gsap";
 
-const SplitText: FC = () => {
-  const [q, boxRef] = useSelector();
+const SplitText2: FC = () => {
+  const [q, boxRef] = useSelector2();
 
   useEffect(() => {
     // const splitText = Splitting(boxRef.current?.innerText || "")
@@ -38,4 +38,4 @@ const SplitText: FC = () => {
   );
 };
 
-export default SplitText;
+export default SplitText2;

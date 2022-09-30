@@ -6,7 +6,7 @@ import headerImg from "../../../assets/img/header-img.svg";
 
 import "./Banner.scss";
 
-const Banner: FC = () => {
+const Banner2: FC = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -96,4 +96,4 @@ const Banner: FC = () => {
   );
 };
 
-export default Banner;
+export default Banner2;

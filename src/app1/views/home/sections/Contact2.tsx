@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../../../assets/img/contact-img.svg";
 import TrackVisibility from "react-on-screen";
 
-const Contact: FC = () => {
+const Contact2: FC = () => {
   const formInitialDetails = {
     firstName: "",
     lastName: "",
@@ -125,4 +125,4 @@ const Contact: FC = () => {
   );
 };
 
-export default Contact;
+export default Contact2;

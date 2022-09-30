@@ -9,7 +9,7 @@ interface NavigationLinkProps extends React.HTMLProps<HTMLAnchorElement> {
   href: string;
 }
 
-const HrefNavigationLink: FC<NavigationLinkProps> = ({ label, href }) => {
+const HrefNavigationLink2: FC<NavigationLinkProps> = ({ label, href }) => {
   const location = useLocation();
   const isActive = location.hash === href;
   return (
@@ -19,7 +19,7 @@ const HrefNavigationLink: FC<NavigationLinkProps> = ({ label, href }) => {
   );
 };
 
-export default HrefNavigationLink;
+export default HrefNavigationLink2;
 
 const StyledNavLink = styled(Nav.Link)`
   font-weight: 400;

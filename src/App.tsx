@@ -1,7 +1,7 @@
 import React from "react";
-import NavigationBar from "./components/layout/NavigationBar";
+import NavigationBar from "./app1/components/layout/NavigationBar2";
 import Router from "./Router";
-import Footer from "./components/layout/footer/Footer";
+import Footer from "./app1/components/layout/footer/Footer2";
 import "./App.scss";
 import { Col, Row } from "react-bootstrap";
 

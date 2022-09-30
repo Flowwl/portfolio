@@ -5,11 +5,11 @@ import projImg3 from "../../../assets/img/project-img3.png";
 import colorSharp2 from "../../../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import React, { FC } from "react";
-import ProjectCard from "../../../components/molecules/ProjectCard";
+import ProjectCard2 from "../../../components/molecules/ProjectCard2";
 
 import "./Projects.scss";
 
-const Projects: FC = () => {
+const Projects2: FC = () => {
   const projects = [
     {
       title: "Business Startup",
@@ -77,7 +77,7 @@ const Projects: FC = () => {
                       <Tab.Pane eventKey="first">
                         <Row>
                           {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
+                            return <ProjectCard2 key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
@@ -108,4 +108,4 @@ const Projects: FC = () => {
   );
 };
 
-export default Projects;
+export default Projects2;

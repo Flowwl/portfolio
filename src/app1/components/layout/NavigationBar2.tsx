@@ -5,9 +5,9 @@ import navIcon1 from "../../assets/img/nav-icon1.svg";
 import navIcon2 from "../../assets/img/nav-icon2.svg";
 import navIcon3 from "../../assets/img/nav-icon3.svg";
 import "./NavigationBar.scss";
-import HrefNavigationLink from "../atoms/HrefNavigationLink";
+import HrefNavigationLink2 from "../atoms/HrefNavigationLink2";
 
-const NavigationBar: FC = () => {
+const NavigationBar2: FC = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -35,9 +35,9 @@ const NavigationBar: FC = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <HrefNavigationLink label="Home" href="#home" />
-            <HrefNavigationLink label="Skills" href="#skills" />
-            <HrefNavigationLink label="Projects" href="#projects" />
+            <HrefNavigationLink2 label="Home" href="#home" />
+            <HrefNavigationLink2 label="Skills" href="#skills" />
+            <HrefNavigationLink2 label="Projects" href="#projects" />
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
@@ -61,4 +61,4 @@ const NavigationBar: FC = () => {
   );
 };
 
-export default NavigationBar;
+export default NavigationBar2;
