@@ -1,5 +1,5 @@
 import React, { FC, HTMLAttributes } from "react";
-import { getIcon, IconName } from "../utils/icons";
+import { getIcon, IconName } from "../../utils/icons";
 import cx from "classnames";
 
 interface IconButtonProps extends HTMLAttributes<HTMLButtonElement> {

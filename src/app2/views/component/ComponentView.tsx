@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import IconButton from "../../atoms/IconButton";
-import SlidingButton from "../../atoms/SlidingButton";
+import IconButton from "../../components/atoms/IconButton";
+import SlidingButton from "../../components/atoms/SlidingButton";
 
 const ComponentView: FC = () => {
   const sectionStyle = "flex items-center gap-4";
