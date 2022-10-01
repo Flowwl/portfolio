@@ -25,6 +25,7 @@ module.exports = {
       },
 
       zIndex: {
+        minus: -1,
         background: 0,
         normal: 1,
         spinner: 30,

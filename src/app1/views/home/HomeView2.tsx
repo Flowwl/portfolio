@@ -6,12 +6,12 @@ import Contact2 from "./sections/Contact2";
 
 const HomeView2: FC = () => {
   return (
-    <>
+    <div className="h-full w-full flex flex-col">
       <Banner2 />
       <Skills2 />
       <Projects2 />
       <Contact2 />
-    </>
+    </div>
   );
 };
 
