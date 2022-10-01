@@ -1,11 +1,11 @@
 import React, { FC, useEffect, useState } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../../assets/img/logo.svg";
 import navIcon1 from "../../assets/img/nav-icon1.svg";
 import navIcon2 from "../../assets/img/nav-icon2.svg";
 import navIcon3 from "../../assets/img/nav-icon3.svg";
 import "./NavigationBar.scss";
-import HrefNavigationLink2 from "../atoms/HrefNavigationLink2";
+import HrefNavigationLink from "../../../app2/atoms/HrefNavigationLink";
 
 const NavigationBar2: FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -35,9 +35,9 @@ const NavigationBar2: FC = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <HrefNavigationLink2 label="Home" href="#home" />
-            <HrefNavigationLink2 label="Skills" href="#skills" />
-            <HrefNavigationLink2 label="Projects" href="#projects" />
+            <HrefNavigationLink label="Home" href="#home" />
+            <HrefNavigationLink label="Skills" href="#skills" />
+            <HrefNavigationLink label="Projects" href="#projects" />
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
