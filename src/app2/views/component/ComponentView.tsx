@@ -8,7 +8,7 @@ const ComponentView: FC = () => {
     <div className="flex flex-col w-2/3 mx-auto gap-3">
       <section className={sectionStyle}>
         <h1>Icon Button</h1>
-        <IconButton iconName="FACEBOOK" />
+        <IconButton iconName="FACEBOOK" url="" />
       </section>
       <section className={sectionStyle}>
         <h1>Sliding Button</h1>

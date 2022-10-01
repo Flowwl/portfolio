@@ -1,7 +1,11 @@
-import { RiFacebookFill } from "react-icons/ri";
+import { RiFacebookFill, RiGithubFill, RiLinkedinFill } from "react-icons/ri";
+import { SiFiverr } from "react-icons/si";
 
 export const ICONS = {
-  FACEBOOK: RiFacebookFill
+  FACEBOOK: RiFacebookFill,
+  GITHUB: RiGithubFill,
+  LINKEDIN: RiLinkedinFill,
+  FIVERR: SiFiverr
 };
 
 export type IconName = keyof typeof ICONS;
