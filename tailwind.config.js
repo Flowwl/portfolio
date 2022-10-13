@@ -1,9 +1,3 @@
-// const { theme: defaultTheme } = require("tailwindcss/defaultConfig");
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires,no-undef,@typescript-eslint/no-unused-vars
-const colors = require("tailwindcss/colors");
-
-/** @type {import("tailwindcss").Config} */
 // eslint-disable-next-line no-undef
 module.exports = {
   content: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
@@ -12,16 +6,9 @@ module.exports = {
     extend: {
       screens: {
         mobile: "400px",
-        // => @media (min-width: 400px) { ... }
-
         tablet: "640px",
-        // => @media (min-width: 640px) { ... }
-
         laptop: "1024px",
-        // => @media (min-width: 1024px) { ... }
-
         desktop: "1280px"
-        // => @media (min-width: 1280px) { ... }
       },
 
       zIndex: {
@@ -77,7 +64,6 @@ module.exports = {
       height: {
         topBar: "7vh",
         bottomBar: "3vh",
-        // view: "92vh",
         "40vh": "40vh",
         "60vh": "60vh",
         "70vh": "70vh",
@@ -110,18 +96,19 @@ module.exports = {
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"]
+        montserrat: ["Montserrat", "sans-serif"],
+        cinzel: ["Cinzel", "serif"],
+        greatVibes: ["Great Vibes", "cursive"],
+        pacifico: ["Pacifico", "cursive"],
+        satisfy: ["Satisfy", "cursive"]
       },
       strokeWidth: {
         4: "3px"
       },
       backgroundImage: {
-        banner: "url('./app1/assets/img/banner-bg.png')"
+        banner: "url('./app1/assets/img/banner-bg.png')",
+        footer: "url('./app1/assets/img/footer-bg.png')"
       }
-    },
-    variants: {
-      extend: {}
     }
-  },
-  plugins: []
+  }
 };

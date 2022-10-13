@@ -23,3 +23,11 @@
 }
 
 
+*::-webkit-scrollbar {
+  width: 0.4em !important;
+  height: 0.4em !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-gray-800 rounded-md;
+}

@@ -6,7 +6,7 @@ interface LogoProps {
 }
 
 const Logo: FC<LogoProps> = ({ className }) => {
-  return <h1 className={cx("text-5xl font-semibold", className)}>Florian Padel</h1>;
+  return <h1 className={cx("text-5xl font-light font-satisfy", className)}>Florian Padel</h1>;
 };
 
 export default Logo;

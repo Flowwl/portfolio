@@ -16,7 +16,7 @@ const Banner: FC<BannerProps> = ({ className }) => {
   };
   return (
     <section className={cx("banner bg-banner bg-cover bg-no-repeat flex flex-col", className)} id="home">
-      <GradientLabel label="Welcome to my portfolio" className="self-end !border-r-0" />
+      {/*<GradientLabel label="Welcome to my portfolio" className="self-end !border-r-0 font-light" />*/}
       <div className="flex w-11/12 justify-between mx-auto grow items-center">
         <TrackVisibility className="w-3/5">
           {({ isVisible }) => (

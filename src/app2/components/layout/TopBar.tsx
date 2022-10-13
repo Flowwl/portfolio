@@ -11,6 +11,9 @@ interface TopBarProps {
 }
 
 const TopBar: FC<TopBarProps> = ({ className }) => {
+  const letsConnectHandle = () => {
+    window.location.replace(URLS.LINKEDIN);
+  };
   return (
     <nav
       className={cx(
@@ -30,7 +33,7 @@ const TopBar: FC<TopBarProps> = ({ className }) => {
           <IconButton iconName="LINKEDIN" url={URLS.LINKEDIN} />
           <IconButton iconName="FIVERR" url={URLS.FIVERR} />
         </div>
-        <SlidingButton>Let&apos;s Connect</SlidingButton>
+        <SlidingButton onClick={letsConnectHandle}>Let&apos;s Connect</SlidingButton>
       </div>
     </nav>
   );
