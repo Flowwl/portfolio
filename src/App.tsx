@@ -6,8 +6,8 @@ import TopBar from "./app2/components/layout/TopBar";
 
 function App() {
   return (
-    <div className="flex flex-col h-screen bg-gray-700">
-      <TopBar />
+    <div className="flex flex-col h-screen bg-gray-700 relative">
+      <TopBar className="h-topBar" />
       <div className="flex grow">
         <Router />
       </div>

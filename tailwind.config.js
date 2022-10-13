@@ -45,6 +45,10 @@ module.exports = {
           500: "#006fe0",
           800: "#41566e"
         },
+        accent: {
+          500: "#aa367c",
+          900: "#4a2fbd"
+        },
         success: {
           300: "#90b66a",
           600: "#27ae60"
@@ -71,11 +75,13 @@ module.exports = {
         64: "12rem"
       },
       height: {
-        topBar: "5vh",
+        topBar: "7vh",
         bottomBar: "3vh",
         // view: "92vh",
         "40vh": "40vh",
         "60vh": "60vh",
+        "70vh": "70vh",
+        "75vh": "75vh",
         "80vh": "80vh"
       },
       minHeight: {
@@ -108,6 +114,9 @@ module.exports = {
       },
       strokeWidth: {
         4: "3px"
+      },
+      backgroundImage: {
+        banner: "url('./app1/assets/img/banner-bg.png')"
       }
     },
     variants: {
