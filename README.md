@@ -9,5 +9,4 @@ Portfolio for freelance and work presentation
 - fix texts
 - fix form address
 - add logo
-- remove App.scss
-- remove bootstrap
+- add responsive

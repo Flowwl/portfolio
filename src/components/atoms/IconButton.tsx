@@ -20,7 +20,7 @@ const IconButton: FC<IconButtonProps> = ({ className, iconName, url, ...rest }) 
         "before:content-[''] before:absolute before:inset-0 before:w-full before:h-full before:bg-gray-0 before:scale-0 before:rounded-full before:z-minus",
         "before:transition before:ease-in-out before:duration-500",
         "transition ease-in-out duration-500 before:hover:scale-100 hover:text-gray-900",
-        "rounded-full border-1 border-gray-200",
+        "rounded-full border border-gray-200",
         "p-2.5",
         className
       )}

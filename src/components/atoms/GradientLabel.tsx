@@ -11,7 +11,7 @@ const GradientLabel: FC<GradientLabelProps> = ({ className, label }) => {
     <span
       className={cx(
         "bg-gradient-to-r from-accent-500/50 to-accent-900/50 bg-opacity-50",
-        "border-1 border-gray-0/50",
+        "border border-gray-0/50",
         "text-xl p-2 text-center",
         className
       )}

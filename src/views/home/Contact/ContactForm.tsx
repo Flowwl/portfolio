@@ -48,7 +48,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
   };
 
   return (
-    <form className={cx("flex flex-col px-1 gap-2", className)} onSubmit={handleSubmit}>
+    <form className={cx("flex flex-col px-1 gap-2 w-full", className)} onSubmit={handleSubmit}>
       <div className="flex flex-col gap-2">
         <div className="flex gap-2">
           <Input

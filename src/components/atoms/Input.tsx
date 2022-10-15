@@ -9,7 +9,7 @@ const Input: FC<InputProps> = ({ className, ...props }) => {
   return (
     <input
       className={cx(
-        "w-full bg-gray-0/10 border-1 border-gray-0/50 rounded-xl text-gray-0 px-4 py-3 transition duration-500 ease-in-out",
+        "w-full bg-gray-0/10 border border-gray-0/50 rounded-xl text-gray-0 px-4 py-3 transition duration-500 ease-in-out",
         "focus:bg-gray-0 focus:text-gray-700",
         "placeholder:text-gray-0",
         "focus:placeholder:text-gray-700/80",

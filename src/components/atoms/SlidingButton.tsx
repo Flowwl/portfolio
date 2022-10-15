@@ -13,7 +13,7 @@ const SlidingButton: FC<SlidingButtonProps> = ({ className, children, color = "d
       className={cx(
         "relative cursor-pointer z-0",
         "px-5 py-3 text-lg font-semibold",
-        "border-1 border-gray-0",
+        "border border-gray-0",
         "before:content-[''] before:absolute before:inset-0 before:w-full before:h-full before:z-minus",
         "before:transition before:ease-in-out before:duration-500 before:origin-left before:scale-x-0",
         "transition ease-in-out duration-500 before:hover:scale-x-100",
