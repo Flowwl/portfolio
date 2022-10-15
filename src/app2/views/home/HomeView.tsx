@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import Banner from "./sections/Banner";
+import Banner from "./sections/Banner/Banner";
 
 const HomeView: FC = () => {
   return (

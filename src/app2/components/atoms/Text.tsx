@@ -7,7 +7,7 @@ interface TextProps {
 }
 
 const Text: FC<TextProps> = ({ className, children }) => {
-  return <p className={cx("text-gray-200 text-xl", className)}>{children}</p>;
+  return <p className={cx("text-gray-200 text-base", className)}>{children}</p>;
 };
 
 export default Text;

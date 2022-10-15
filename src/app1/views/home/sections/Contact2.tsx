@@ -1,8 +1,8 @@
-import React, { FC, FormEvent } from "react";
-import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../../../assets/img/contact-img.svg";
+import React, { FC, FormEvent, useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import contactImg from "../../../../app2/assets/img/social-contact.svg";
 import TrackVisibility from "react-on-screen";
+import "./Contact2.scss";
 
 const Contact2: FC = () => {
   const formInitialDetails = {

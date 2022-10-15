@@ -106,8 +106,8 @@ module.exports = {
         4: "3px"
       },
       backgroundImage: {
-        banner: "url('./app1/assets/img/banner-bg.png')",
-        footer: "url('./app1/assets/img/footer-bg.png')"
+        banner: "url('./app2/assets/img/galaxy.png')",
+        footer: "url('./app2/assets/img/footer.png')"
       }
     }
   }

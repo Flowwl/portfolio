@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 import TrackVisibility from "react-on-screen";
-import WritingText from "../../../components/atoms/WritingText";
-import ButtonRightArrow from "../../../components/atoms/ButtonRightArrow";
 import cx from "classnames";
-import MovingAstronaut from "../../../components/atoms/MovingAstronaut";
-import { URLS } from "../../../constants/urls";
-import Title from "../../../components/atoms/Title";
-import Text from "../../../components/atoms/Text";
+import Title from "../../../../components/atoms/Title";
+import Text from "../../../../components/atoms/Text";
+import { URLS } from "../../../../constants/urls";
+import WritingText from "../../../../components/atoms/WritingText";
+import ButtonRightArrow from "../../../../components/atoms/ButtonRightArrow";
+import MovingAstronaut from "../../../../components/atoms/MovingAstronaut";
 
 interface BannerProps {
   className?: string;

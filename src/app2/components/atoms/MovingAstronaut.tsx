@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import headerImg from "../../../app1/assets/img/header-img.svg";
+import headerImg from "../../assets/img/astronaut.svg";
 import cx from "classnames";
 import "./MovingAstronaut.scss";
 

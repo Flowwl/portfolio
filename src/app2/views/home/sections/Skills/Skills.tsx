@@ -1,9 +1,8 @@
 import React, { FC } from "react";
 import "react-multi-carousel/lib/styles.css";
-
-import Title from "../../../../app2/components/atoms/Title";
-import Text from "../../../../app2/components/atoms/Text";
-import GradientChip from "../../../../app2/components/atoms/GradientChip";
+import Title from "../../../../components/atoms/Title";
+import Text from "../../../../components/atoms/Text";
+import GradientChip from "../../../../components/atoms/GradientChip";
 
 const Skills: FC = () => {
   return (
