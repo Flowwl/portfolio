@@ -9,7 +9,8 @@ import Text from "../../../../components/atoms/Text";
 
 const Projects: FC = () => {
   return (
-    <section className="project bg-gray-700 pt-48" id="projects">
+    //FIXME INVERSER BG
+    <section className="project bg-gray-700 bg-project2 bg-no-repeat bg-cover bg-rotate-90 pt-48" id="projects">
       <TrackVisibility className="w-3/4 mx-auto flex flex-col items-center text-center gap-10">
         {({ isVisible }) => (
           <div

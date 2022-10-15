@@ -1,8 +1,8 @@
 import React, { FC } from "react";
-import Contact2 from "./sections/Contact2";
 import Banner from "../../../app2/views/home/sections/Banner/Banner";
 import Skills from "../../../app2/views/home/sections/Skills/Skills";
 import Projects from "../../../app2/views/home/sections/Projects/Projects";
+import Contact from "../../../app2/views/home/Contact/Contact";
 
 const HomeView2: FC = () => {
   return (
@@ -10,7 +10,7 @@ const HomeView2: FC = () => {
       <Banner className="h-75vh pt-10" />
       <Skills />
       <Projects />
-      <Contact2 />
+      <Contact />
     </div>
   );
 };
