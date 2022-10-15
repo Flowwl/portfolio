@@ -10,7 +10,7 @@ import Text from "../../../../components/atoms/Text";
 const Projects: FC = () => {
   return (
     //FIXME INVERSER BG
-    <section className="project bg-gray-700 bg-project2 bg-no-repeat bg-cover bg-rotate-90 pt-48" id="projects">
+    <section className="project bg-gray-700 bg-project2 bg-no-repeat bg-cover bg-rotate-90 pt-48">
       <TrackVisibility className="w-3/4 mx-auto flex flex-col items-center text-center gap-10">
         {({ isVisible }) => (
           <div
@@ -18,7 +18,7 @@ const Projects: FC = () => {
               "animate__animated animate__fadeIn": isVisible
             })}
           >
-            <Title>Projects</Title>
+            <Title id="projects">Projects</Title>
             <Text className="text-sm">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
               industry&lsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type

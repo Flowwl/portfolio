@@ -82,6 +82,9 @@ module.exports = {
         viewHeader: "4rem",
         viewBody: "3rem"
       },
+      scrollPadding: {
+        topBar: "7vh"
+      },
       boxShadow: {
         cardHeader: "0 1px 7px 3px #111111",
         card: "3px 3px 15px -1px #000000",

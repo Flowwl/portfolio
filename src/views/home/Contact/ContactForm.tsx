@@ -91,8 +91,8 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
         {status.message && (
           <p
             className={cx("text-right", {
-              danger: !status.success,
-              success: status.success
+              "text-danger-300": !status.success,
+              "text-success-300": status.success
             })}
           >
             {status.message}

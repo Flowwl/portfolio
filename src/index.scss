@@ -5,9 +5,15 @@
 @tailwind utilities;
 
 
+html {
+  scroll-behavior: smooth;
+  @apply bg-gray-700 scroll-pt-topBar;
+}
+
 *::-webkit-scrollbar {
   width: 0.4em !important;
   height: 0.4em !important;
+
 }
 
 *::-webkit-scrollbar-thumb {
