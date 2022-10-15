@@ -2,9 +2,9 @@ import React, { FC } from "react";
 import { Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import cx from "classnames";
-import SocialContact from "../../../../app2/components/atoms/SocialContact";
-import Title from "../../../../app2/components/atoms/Title";
 import ContactForm from "./ContactForm";
+import SocialContact from "@/components/atoms/SocialContact";
+import Title from "@/components/atoms/Title";
 
 const Contact: FC = () => {
   return (

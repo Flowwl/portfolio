@@ -3,6 +3,7 @@ import Banner from "./sections/Banner/Banner";
 import Skills from "./sections/Skills/Skills";
 import Projects from "./sections/Projects/Projects";
 import Contact from "./Contact/Contact";
+import CardRocket from "@/views/home/sections/Rocket/CardRocket";
 
 const HomeView: FC = () => {
   return (
@@ -11,6 +12,7 @@ const HomeView: FC = () => {
       <Skills />
       <Projects />
       <Contact />
+      <CardRocket />
     </div>
   );
 };

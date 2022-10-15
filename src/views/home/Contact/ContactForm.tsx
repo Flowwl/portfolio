@@ -1,8 +1,8 @@
 import React, { FC, FormEvent, useState } from "react";
 import cx from "classnames";
-import Input from "../../../../app2/components/atoms/Input";
-import SlidingButton from "../../../../app2/components/atoms/SlidingButton";
-import TextArea from "../../../../app2/components/atoms/TextArea";
+import Input from "@/components/atoms/Input";
+import TextArea from "@/components/atoms/TextArea";
+import SlidingButton from "@/components/atoms/SlidingButton";
 
 interface ContactFormProps {
   className?: string;

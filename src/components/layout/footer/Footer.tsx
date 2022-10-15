@@ -1,16 +1,12 @@
 import React, { FC } from "react";
-
-import "../../../app1/components/layout/footer/Footer.scss";
-import Newsletter2 from "../../../app1/components/layout/footer/Newsletter2";
-import Logo from "../atoms/Logo";
-import IconButton from "../atoms/IconButton";
-import { URLS } from "../../constants/urls";
+import Logo from "@/components/atoms/Logo";
+import IconButton from "@/components/atoms/IconButton";
+import { URLS } from "@/constants/urls";
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-footer bg-center bg-cover bg-no-repeat footer pb-16">
+    <footer className="bg-footer bg-center bg-cover bg-no-repeat footer pb-4 pt-32">
       <div className="flex flex-col items-center w-3/4 mx-auto">
-        <Newsletter2 />
         <div className="flex justify-between items-center w-full">
           <Logo />
           <div className="flex flex-col gap-3">

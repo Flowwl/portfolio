@@ -1,9 +1,8 @@
 import React, { FC } from "react";
 import { Route, Routes } from "react-router-dom";
-import AnimationsView from "./app1/views/animations/AnimationsView2";
-import HomeView from "./app2/views/home/HomeView";
-import PlaygroundView from "./app2/views/playground/PlaygroundView";
-import ComponentView from "./app2/views/component/ComponentView";
+import HomeView from "@/views/home/HomeView";
+import ComponentView from "@/views/component/ComponentView";
+import PlaygroundView from "@/views/playground/PlaygroundView";
 
 const Router: FC = () => {
   return (
@@ -22,17 +21,9 @@ export const ROUTES = {
     path: "/",
     view: <HomeView />
   },
-  REWORK: {
-    path: "/rework",
-    view: <HomeView />
-  },
   COMPONENTS: {
     path: "/components",
     view: <ComponentView />
-  },
-  ANIMATIONS: {
-    path: "/animations",
-    view: <AnimationsView />
   },
   PLAYGROUND: {
     path: "/playground",

@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import cx from "classnames";
-import IconButton from "../atoms/IconButton";
-import SlidingButton from "../atoms/SlidingButton";
-import HrefNavigationLink from "../atoms/HrefNavigationLink";
-import Logo from "../atoms/Logo";
-import { URLS } from "../../constants/urls";
+import Logo from "@/components/atoms/Logo";
+import HrefNavigationLink from "@/components/atoms/HrefNavigationLink";
+import IconButton from "@/components/atoms/IconButton";
+import { URLS } from "@/constants/urls";
+import SlidingButton from "@/components/atoms/SlidingButton";
 
 interface TopBarProps {
   className?: string;

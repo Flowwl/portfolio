@@ -1,8 +1,8 @@
 import React from "react";
 import Router from "./Router";
 import "./App.scss";
-import TopBar from "./app2/components/layout/TopBar";
-import Footer from "./app2/components/layout/Footer";
+import TopBar from "@/components/layout/topBar/TopBar";
+import Footer from "@/components/layout/footer/Footer";
 
 function App() {
   return (
