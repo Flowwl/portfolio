@@ -35,7 +35,7 @@ const ProjectTab: FC<ProjectTabProps> = ({ className }) => {
     }
   ];
   return (
-    <div className={cx("w-full flex flex-wrap gap-6", className)}>
+    <div className={cx("mx-auto flex flex-wrap justify-center gap-3 laptop:gap-6", className)}>
       {projects.map(({ title, description, imgUrl, url }) => {
         return <ProjectCard key={title} title={title} description={description} imgUrl={imgUrl} url={url} />;
       })}

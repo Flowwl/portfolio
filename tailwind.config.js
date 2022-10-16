@@ -119,5 +119,7 @@ module.exports = {
         project3: "url('./assets/img/project3.png')"
       }
     }
-  }
+  },
+  // eslint-disable-next-line no-undef
+  plugins: [require("@tailwindcss/aspect-ratio")]
 };

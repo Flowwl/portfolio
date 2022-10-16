@@ -15,14 +15,15 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, description, imgUrl, url, cl
   return (
     <div
       className={cx(
-        "relative rounded-2xl overflow-hidden project-card h-52 w-96",
+        "relative rounded-2xl overflow-hidden project-card",
+        "h-52 w-72",
         "before:w-full before:h-0 before:absolute before:bg-gradient-to-tl before:from-accent-500/80 before:to-accent-900/80 before:content-[''] transition before:duration-300 before:ease-in-out before:inset-0",
         "before:hover:h-full",
         className
       )}
     >
-      <img src={imgUrl} className="h-52 w-96" />
-      <div className="absolute text-center w-full project-card-hover-text flex flex-col h-full justify-center">
+      <img src={imgUrl} className="h-52 w-72" />
+      <div className="absolute text-center w-full flex flex-col h-full justify-center project-card-hover-text">
         <div>
           <h4 className="text-xl text-gray-0 font-semibold">{title}</h4>
           <span className="text-sm text-gray-0 italic">{description}</span>
