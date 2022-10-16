@@ -18,7 +18,7 @@ const TopBar: FC<TopBarProps> = ({ className }) => {
   return (
     <nav
       className={cx(
-        "flex justify-evenly gap-3 items-center py-2 sticky top-0 bg-gray-700 z-topBar opacity-90",
+        "flex justify-evenly gap-3 items-center py-2 fixed w-full top-0 bg-gray-700 z-topBar opacity-90",
         className
       )}
     >

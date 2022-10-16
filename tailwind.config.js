@@ -82,7 +82,8 @@ module.exports = {
         sectionContainer: "1.5rem",
         logoHeader: "3rem",
         viewHeader: "4rem",
-        viewBody: "3rem"
+        viewBody: "3rem",
+        topBar: "7vh"
       },
       scrollPadding: {
         topBar: "7vh"

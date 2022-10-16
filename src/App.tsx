@@ -5,7 +5,7 @@ import Footer from "@/components/layout/footer/Footer";
 
 function App() {
   return (
-    <div className="flex flex-col h-screen bg-gray-700 text-gray-0 overscroll-y-none relative">
+    <div className="flex flex-col h-screen bg-gray-700 text-gray-0 overscroll-y-none relative font-roboto font-light">
       <TopBar className="h-topBar" />
       <div className="flex grow">
         <Router />

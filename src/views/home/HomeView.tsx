@@ -8,7 +8,7 @@ import CardRocket from "@/views/home/sections/Rocket/CardRocket";
 const HomeView: FC = () => {
   return (
     <div className="h-full w-full flex flex-col">
-      <Banner className="h-75vh pt-10" />
+      <Banner className="h-75vh pt-5" />
       <Skills />
       <Projects />
       <Contact />
