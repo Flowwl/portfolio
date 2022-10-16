@@ -34,7 +34,8 @@ module.exports = {
         },
         accent: {
           500: "#aa367c",
-          900: "#4a2fbd"
+          900: "#4a2fbd",
+          1000: "#2E2037"
         },
         success: {
           300: "#90b66a",
@@ -53,6 +54,7 @@ module.exports = {
           500: "#262626",
           600: "#1c1c1c",
           700: "#11120F",
+          750: "#121212",
           800: "#0e0e0e",
           900: "#000"
         }
@@ -112,7 +114,8 @@ module.exports = {
         banner: "url('./assets/img/galaxy.png')",
         footer: "url('./assets/img/footer.png')",
         project: "url('./assets/img/project.png')",
-        project2: "url('./assets/img/project2.png')"
+        project2: "url('./assets/img/project2.png')",
+        project3: "url('./assets/img/project3.png')"
       }
     }
   }

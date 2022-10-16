@@ -8,7 +8,7 @@ import { TITLES } from "@/constants/texts";
 
 const Contact: FC = () => {
   return (
-    <section className="bg-gradient-to-bl from-accent-900 to-accent-500 pt-24 pb-48 contact" id="connect">
+    <section className="bg-gradient-to-bl from-accent-900/90 to-accent-500 pt-24 pb-48 contact" id="connect">
       <div className="flex justify-between w-10/12 mx-auto gap-10 items-center">
         <TrackVisibility className="w-full">
           {({ isVisible }) => (

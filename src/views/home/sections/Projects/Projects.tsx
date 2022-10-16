@@ -10,8 +10,12 @@ import { REFS, TEXTS, TITLES } from "@/constants/texts";
 
 const Projects: FC = () => {
   return (
-    //FIXME INVERSER BG
-    <section className="bg-gray-700 bg-project2 bg-no-repeat bg-cover bg-rotate-90 pt-48">
+    <section
+      className={cx(
+        "bg-gray-750 pt-48 relative overflow-hidden",
+        "before:absolute before:top-0 before:bottom-0 before:left-auto before:right-0 before:w-full before:h-full before:bg-cover before:bg-project before:z-0 before:bg-no-repeat"
+      )}
+    >
       <TrackVisibility className="w-3/4 mx-auto flex flex-col items-center text-center gap-10">
         {({ isVisible }) => (
           <div
