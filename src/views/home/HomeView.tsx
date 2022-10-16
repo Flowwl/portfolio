@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import Banner from "./sections/Banner/Banner";
 import Skills from "./sections/Skills/Skills";
 import Projects from "./sections/Projects/Projects";
-import Contact from "./Contact/Contact";
+import Contact from "./sections/Contact/Contact";
 import CardRocket from "@/views/home/sections/Rocket/CardRocket";
 
 const HomeView: FC = () => {

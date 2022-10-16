@@ -5,6 +5,7 @@ import HrefNavigationLink from "@/components/atoms/HrefNavigationLink";
 import IconButton from "@/components/atoms/IconButton";
 import { URLS } from "@/constants/urls";
 import SlidingButton from "@/components/atoms/SlidingButton";
+import { REFS, TEXTS, TITLES } from "@/constants/texts";
 
 interface TopBarProps {
   className?: string;
@@ -24,16 +25,16 @@ const TopBar: FC<TopBarProps> = ({ className }) => {
       <Logo />
       <div className="flex gap-4 items-center ">
         <div className="flex gap-4">
-          <HrefNavigationLink label="Home" href="#home" />
-          <HrefNavigationLink label="Skills" href="#skills" />
-          <HrefNavigationLink label="Projects" href="#projects" />
+          <HrefNavigationLink label={TITLES.HOME} href={`#${REFS.HOME}`} />
+          <HrefNavigationLink label={TITLES.SKILLS} href={`#${REFS.SKILLS}`} />
+          <HrefNavigationLink label={TITLES.PROJECTS} href={`#${REFS.PROJECTS}`} />
         </div>
         <div className="flex gap-2">
           <IconButton iconName="GITHUB" url={URLS.GITHUB} />
           <IconButton iconName="LINKEDIN" url={URLS.LINKEDIN} />
           <IconButton iconName="FIVERR" url={URLS.FIVERR} />
         </div>
-        <SlidingButton onClick={letsConnectHandle}>Let&apos;s Connect</SlidingButton>
+        <SlidingButton onClick={letsConnectHandle}>{TEXTS.LETS_CONNECT}</SlidingButton>
       </div>
     </nav>
   );

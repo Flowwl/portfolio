@@ -4,6 +4,7 @@ import cx from "classnames";
 import ContactForm from "./ContactForm";
 import SocialContact from "@/components/atoms/SocialContact";
 import Title from "@/components/atoms/Title";
+import { TITLES } from "@/constants/texts";
 
 const Contact: FC = () => {
   return (
@@ -21,7 +22,7 @@ const Contact: FC = () => {
                 "animate__animated animate__fadeIn": isVisible
               })}
             >
-              <Title>Get in touch</Title>
+              <Title>{TITLES.CONTACT}</Title>
               <ContactForm />
             </div>
           )}

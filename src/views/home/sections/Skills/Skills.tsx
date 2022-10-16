@@ -3,13 +3,14 @@ import "react-multi-carousel/lib/styles.css";
 import Title from "../../../../components/atoms/Title";
 import Text from "../../../../components/atoms/Text";
 import GradientChip from "../../../../components/atoms/GradientChip";
+import { REFS, TEXTS, TITLES } from "@/constants/texts";
 
 const Skills: FC = () => {
   return (
     <section className="flex flex-col relative">
       <div className="bg-gray-600 rounded-3xl w-4/5 mx-auto text-center px-5 py-4 absolute z-normal mx-auto inset-x-0 -top-32">
-        <Title id="skills">Skills</Title>
-        <Text className="text-base">During my project, I had the opportunity to work with many technologies</Text>
+        <Title id={REFS.SKILLS}>{TITLES.SKILLS}</Title>
+        <Text className="text-base">{TEXTS.SKILLS}</Text>
         <div className="flex items-center justify-center gap-4 mt-4 w-8/12 mx-auto flex-wrap">
           {Technologies.map((technology) => (
             <GradientChip key={technology} label={technology} />

@@ -8,5 +8,6 @@ Portfolio for freelance and work presentation
 - fill projects card
 - fix texts
 - fix form address
-- add logo
 - add responsive
+- add bibliography of all technos
+- add threejs rocket
