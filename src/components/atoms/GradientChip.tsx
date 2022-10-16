@@ -10,10 +10,10 @@ const GradientChip: FC<GradientChipProps> = ({ className, label }) => {
   return (
     <span
       className={cx(
-        "bg-gradient-to-r from-accent-500/40 to-accent-900/40 bg-opacity-50",
         "rounded-2xl",
-        "text-sm text-gray-100 px-3 py-2 text-center",
-        "hover:from-accent-500/60 hover:to-accent-900/60 hover:text-gray-0 hover:cursor-default",
+        "text-sm text-gray-0 px-3 py-2 text-center",
+        "bg-gradient-to-r from-accent-500/60 to-accent-900/60 text-gray-0 cursor-default",
+        "hover:from-accent-500/40 hover:to-accent-900/40 hover:bg-opacity-50",
         className
       )}
     >

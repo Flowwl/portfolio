@@ -6,9 +6,12 @@ import SocialContact from "@/components/atoms/SocialContact";
 import Title from "@/components/atoms/Title";
 import { TITLES } from "@/constants/texts";
 
-const Contact: FC = () => {
+interface ContactProps {
+  className?: string;
+}
+const Contact: FC<ContactProps> = ({ className }) => {
   return (
-    <section className="bg-gradient-to-bl from-accent-900/90 to-accent-500 pt-24 pb-48 contact" id="connect">
+    <section className={cx("bg-gradient-to-bl from-accent-900/90 to-accent-500 contact", className)} id="connect">
       <div className="flex flex-col tablet:flex-row justify-between w-10/12 mx-auto gap-10 items-center">
         <TrackVisibility className="w-full">
           {({ isVisible }) => (

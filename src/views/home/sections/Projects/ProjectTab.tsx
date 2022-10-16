@@ -26,7 +26,7 @@ const ProjectTab: FC<ProjectTabProps> = ({ className }) => {
       title: "Studyo",
       description: "Music record sessions reservation website (React, Node.js, fullCalendar, Stripe)",
       imgUrl: projStudyo,
-      url: "http://studyo110.fr"
+      url: "https://studyo110.fr"
     },
     {
       title: "Solid Labs",

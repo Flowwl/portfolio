@@ -13,8 +13,8 @@ interface TabsProps {
 
 const Tabs: FC<TabsProps> = ({ className, tabs, headerClassNames }) => {
   return (
-    <div className={cx("w-full py-16", className)}>
-      <Tab.Group as="div" className="flex flex-col gap-8">
+    <div className={cx("w-full py-8", className)}>
+      <Tab.Group as="div" className="flex flex-col">
         <Tab.List className={cx("flex rounded-xl bg-gray-600 p-1 gap-1 w-3/4 mx-auto", headerClassNames)}>
           {tabs.map(({ label }) => (
             <Tab
@@ -31,7 +31,7 @@ const Tabs: FC<TabsProps> = ({ className, tabs, headerClassNames }) => {
             </Tab>
           ))}
         </Tab.List>
-        <Tab.Panels className="mt-2 flex w-full gap-4 flex-wrap">
+        <Tab.Panels className="flex w-full gap-4 flex-wrap">
           {tabs.map(({ label, component }) => (
             <Tab.Panel key={label} className={cx("rounded-xl bg-transparent p-3", "focus:outline-none")}>
               {component}
