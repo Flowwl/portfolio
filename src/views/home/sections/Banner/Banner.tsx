@@ -27,18 +27,19 @@ const Banner: FC<BannerProps> = ({ className }) => {
                 "animate__animated animate__fadeIn": isVisible
               })}
             >
-              <Title className="flex items-center gap-2">
+              <Title className="flex flex-col laptop:flex-row laptop:items-center">
                 <span>{TITLES.BANNER}</span>
                 <WritingText className="ml-2" toRotate={TITLES.BANNER_WRITING_TEXT} />
               </Title>
-              <Text className="mt-6 ">{TEXTS.BANNER}</Text>
+              <Text className="mt-6 hidden laptop:block">{TEXTS.BANNER}</Text>
+              <Text className="mt-6 block laptop:hidden">{TEXTS.BANNER_MOBILE}</Text>
               <ButtonRightArrow className="mt-10" onClick={letsConnectHandle}>
                 {TEXTS.LETS_CONNECT}
               </ButtonRightArrow>
             </div>
           )}
         </TrackVisibility>
-        <TrackVisibility className="w-3/12">
+        <TrackVisibility className="w-5/12 mobile:w-4/12 laptop:w-3/12">
           {({ isVisible }) => (
             <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
               <MovingAstronaut />

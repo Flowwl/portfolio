@@ -29,12 +29,14 @@ const TopBar: FC<TopBarProps> = ({ className }) => {
           <HrefNavigationLink label={TITLES.SKILLS} href={`#${REFS.SKILLS}`} />
           <HrefNavigationLink label={TITLES.PROJECTS} href={`#${REFS.PROJECTS}`} />
         </div>
-        <div className="flex gap-2">
+        <div className="hidden tablet:flex gap-2">
           <IconButton iconName="GITHUB" url={URLS.GITHUB} />
           <IconButton iconName="LINKEDIN" url={URLS.LINKEDIN} />
           <IconButton iconName="FIVERR" url={URLS.FIVERR} />
         </div>
-        <SlidingButton onClick={letsConnectHandle}>{TEXTS.LETS_CONNECT}</SlidingButton>
+        <SlidingButton onClick={letsConnectHandle} className="hidden laptop:flex">
+          {TEXTS.LETS_CONNECT}
+        </SlidingButton>
       </div>
     </nav>
   );

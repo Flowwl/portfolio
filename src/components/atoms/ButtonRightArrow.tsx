@@ -1,6 +1,6 @@
 import React, { FC, HTMLAttributes, ReactNode } from "react";
 import cx from "classnames";
-import { getIcon } from "../../utils/icons";
+import { getIcon } from "@/utils/icons";
 
 interface ButtonRightArrowProps extends HTMLAttributes<HTMLButtonElement> {
   className?: string;
@@ -11,7 +11,11 @@ const ButtonRightArrow: FC<ButtonRightArrowProps> = ({ className, children, ...r
   const ArrowRightCircleIcon = getIcon("RIGHT_ARROW_CIRCLE");
   return (
     <button
-      className={cx("flex items-center gap-2", "text-xl font-semibold items-center m-auto !ml-0", className)}
+      className={cx(
+        "flex items-center gap-2",
+        "text-base mobile:text-md laptop:text-xl font-semibold items-center m-auto !ml-0",
+        className
+      )}
       {...rest}
     >
       {children}

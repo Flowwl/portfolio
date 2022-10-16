@@ -9,7 +9,7 @@ interface TitleProps {
 
 const Title: FC<TitleProps> = ({ className, children, id }) => {
   return (
-    <h2 id={id} className={cx("text-5xl font-satisfy font-semibold", className)}>
+    <h2 id={id} className={cx("text-2xl tablet:text-3xl laptop:text-4xl font-satisfy font-semibold", className)}>
       {children}
     </h2>
   );

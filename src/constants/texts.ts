@@ -13,6 +13,9 @@ export const TEXTS = {
     "company environment. Currently a Software Engineer in an engineering team of 100+ people, I know how to\n" +
     "produce good results fast. My freelance experience began in 2020. I do my best to please your need and\n" +
     "with me, your project is in good hands.",
+  BANNER_MOBILE:
+    "Developer since 2017, I have acquired a lot of experience thanks to many projects from personal and\n" +
+    "company environment.",
   SKILLS: "I had the opportunity to work with many technologies",
   PROJECTS: "My experience is shaped through many different projects",
   LETS_CONNECT: "Let's Connect",
