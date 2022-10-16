@@ -5,5 +5,7 @@ Portfolio for freelance and work presentation
 
 - fill projects card
 - add responsive
-- add bibliography of all technos
 - add threejs rocket
+
+Ideas 
+- add bibliography of all technos ?
