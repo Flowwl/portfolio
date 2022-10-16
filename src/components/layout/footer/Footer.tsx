@@ -7,10 +7,10 @@ const Footer: FC = () => {
   return (
     <footer className="bg-footer bg-center bg-cover bg-no-repeat footer pb-4 pt-32">
       <div className="flex flex-col items-center w-3/4 mx-auto">
-        <div className="flex justify-between items-center w-full">
+        <div className="flex flex-col tablet:flex-row gap-3 justify-between items-center w-full">
           <Logo />
           <div className="flex flex-col gap-3">
-            <div className="flex gap-2">
+            <div className="flex gap-2 justify-center">
               <IconButton iconName="GITHUB" url={URLS.GITHUB} />
               <IconButton iconName="LINKEDIN" url={URLS.LINKEDIN} />
               <IconButton iconName="FIVERR" url={URLS.FIVERR} />

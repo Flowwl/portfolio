@@ -50,7 +50,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
   return (
     <form className={cx("flex flex-col px-1 gap-2 w-full", className)} onSubmit={handleSubmit}>
       <div className="flex flex-col gap-2">
-        <div className="flex gap-2">
+        <div className="flex flex-col tablet:flex-row gap-2">
           <Input
             type="text"
             value={formDetails.firstName}
@@ -64,7 +64,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
             onChange={(e) => onFormUpdate("lastName", e.target.value)}
           />
         </div>
-        <div className="gap-2 flex">
+        <div className="gap-2 flex flex-col tablet:flex-row">
           <Input
             type="email"
             value={formDetails.email}
@@ -98,7 +98,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
             {status.message}
           </p>
         )}
-        <SlidingButton type="submit" color="light" className="ml-auto">
+        <SlidingButton type="submit" color="light" className="ml-auto mr-auto tablet:mr-0">
           {buttonText}
         </SlidingButton>
       </div>

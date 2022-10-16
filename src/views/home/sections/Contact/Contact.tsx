@@ -9,10 +9,12 @@ import { TITLES } from "@/constants/texts";
 const Contact: FC = () => {
   return (
     <section className="bg-gradient-to-bl from-accent-900/90 to-accent-500 pt-24 pb-48 contact" id="connect">
-      <div className="flex justify-between w-10/12 mx-auto gap-10 items-center">
+      <div className="flex flex-col tablet:flex-row justify-between w-10/12 mx-auto gap-10 items-center">
         <TrackVisibility className="w-full">
           {({ isVisible }) => (
-            <SocialContact className={cx("w-11/12", { "animate__animated animate__zoomIn": isVisible })} />
+            <SocialContact
+              className={cx("w-6/12 tablet:w-11/12 mx-auto", { "animate__animated animate__zoomIn": isVisible })}
+            />
           )}
         </TrackVisibility>
         <TrackVisibility className="w-full">
@@ -22,7 +24,7 @@ const Contact: FC = () => {
                 "animate__animated animate__fadeIn": isVisible
               })}
             >
-              <Title>{TITLES.CONTACT}</Title>
+              <Title className="text-center tablet:text-left">{TITLES.CONTACT}</Title>
               <ContactForm />
             </div>
           )}
