@@ -30,7 +30,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setButtonText("Sending...");
-    const response = await fetch("http://localhost:5000/contact", {
+    const response = await fetch(`${process.env.REACT_APP_SERVER_URL}:${process.env.REACT_APP_SERVER_PORT}/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8"
@@ -91,8 +91,8 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
         {status.message && (
           <p
             className={cx("text-right", {
-              "text-danger-300": !status.success,
-              "text-success-300": status.success
+              "text-danger-600": !status.success,
+              "text-success-600": status.success
             })}
           >
             {status.message}

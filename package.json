@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "craco start --config craco.config.js",
+    "startServer": "node server.js",
     "build": "craco build --config craco.config.js",
     "eject": "craco eject",
     "dev": "yarn validate && yarn start",
@@ -63,6 +64,7 @@
     "@types/styled-components": "^5.1.25",
     "classnames": "^2.3.1",
     "craco-alias": "^3.0.1",
+    "dotenv": "^16.0.3",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
