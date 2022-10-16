@@ -19,7 +19,7 @@ const Projects: FC = () => {
       <TrackVisibility className="w-3/4 mx-auto flex flex-col items-center text-center gap-10">
         {({ isVisible }) => (
           <div
-            className={cx("flex flex-col gap-4", {
+            className={cx("flex flex-col w-full gap-4", {
               "animate__animated animate__fadeIn": isVisible
             })}
           >

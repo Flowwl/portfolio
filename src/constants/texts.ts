@@ -15,7 +15,8 @@ export const TEXTS = {
     "with me, your project is in good hands.",
   SKILLS: "I had the opportunity to work with many technologies",
   PROJECTS: "My experience is shaped through many different projects",
-  LETS_CONNECT: "Let's Connect"
+  LETS_CONNECT: "Let's Connect",
+  ACCESS_TO_WEBSITE: "Access to website"
 };
 
 export const REFS = {

@@ -1,7 +1,8 @@
 import React, { FC } from "react";
-import projImg1 from "../../../../assets/img/project-img1.png";
-import projImg2 from "../../../../assets/img/project-img2.png";
-import projImg3 from "../../../../assets/img/project-img3.png";
+import projNpEditor from "../../../../assets/projects/np-editor/np-editior-main-diagram.jpg";
+import projSolidLabs from "../../../../assets/projects/solid-labs/solid-labs-filter.jpg";
+import projStudyo from "../../../../assets/projects/studyo/studyo-home.jpg";
+import projPortfolio from "../../../../assets/projects/portfolio/portfolio-home.jpg";
 import ProjectCard from "./ProjectCard";
 import cx from "classnames";
 
@@ -12,40 +13,31 @@ interface ProjectTabProps {
 const ProjectTab: FC<ProjectTabProps> = ({ className }) => {
   const projects = [
     {
-      title: "Business Startup 1",
-      description: "Design & Development",
-      imgUrl: projImg1
+      title: "Portfolio",
+      description: "My portfolio (React, Tailwind, Typescript)",
+      imgUrl: projPortfolio
     },
     {
-      title: "Business Startup 2",
-      description: "Design & Development",
-      imgUrl: projImg2
+      title: "NP Editor",
+      description: "AI Diagram creation website (MERN stack + react-diagrams)",
+      imgUrl: projNpEditor
     },
     {
-      title: "Business Startup 3",
-      description: "Design & Development",
-      imgUrl: projImg3
+      title: "Studyo",
+      description: "Music record sessions reservation website (React, Node.js, fullCalendar, Stripe)",
+      imgUrl: projStudyo,
+      url: "http://studyo110.fr"
     },
     {
-      title: "Business Startup 4",
-      description: "Design & Development",
-      imgUrl: projImg1
-    },
-    {
-      title: "Business Startup 5",
-      description: "Design & Development",
-      imgUrl: projImg2
-    },
-    {
-      title: "Business Startup 6",
-      description: "Design & Development",
-      imgUrl: projImg3
+      title: "Solid Labs",
+      description: "3D Building visualisation \n (React, Threejs, Firebase, MaterialUI)",
+      imgUrl: projSolidLabs
     }
   ];
   return (
-    <div className={cx("w-full flex flew-wrap gap-6", className)}>
-      {projects.map(({ title, description, imgUrl }) => {
-        return <ProjectCard key={title} title={title} description={description} imgUrl={imgUrl} />;
+    <div className={cx("w-full flex flex-wrap gap-6", className)}>
+      {projects.map(({ title, description, imgUrl, url }) => {
+        return <ProjectCard key={title} title={title} description={description} imgUrl={imgUrl} url={url} />;
       })}
     </div>
   );

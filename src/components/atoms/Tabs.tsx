@@ -31,7 +31,7 @@ const Tabs: FC<TabsProps> = ({ className, tabs, headerClassNames }) => {
             </Tab>
           ))}
         </Tab.List>
-        <Tab.Panels className="mt-2 flex gap-4 flex-wrap">
+        <Tab.Panels className="mt-2 flex w-full gap-4 flex-wrap">
           {tabs.map(({ label, component }) => (
             <Tab.Panel key={label} className={cx("rounded-xl bg-transparent p-3", "focus:outline-none")}>
               {component}
